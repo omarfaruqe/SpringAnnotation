@@ -19,12 +19,20 @@ public class MainApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+      ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 
-      Student student = (Student) context.getBean("student");
-
-      System.out.println("Name : " + student.getName() );
-      System.out.println("Age : " + student.getAge() );
+//      Student student = (Student) context.getBean("student2");
+//
+//      System.out.println("Name : " + student.getName() );
+//      System.out.println("Age : " + student.getAge() );
+      
+       Profile profile = (Profile) context.getBean("profile");
+       profile.printName();
+       profile.printAge() ;
+       
+       
+       
+   
     }
     
 }
