@@ -10,12 +10,26 @@
     
        <context:annotation-config/>
 
+
+   <!-- Definition for profile bean -->
+   <bean id="profile" class="com.mc.Profile">
+       
+   </bean>
+
+
    <!-- Definition for student bean -->
-   <bean id="student" class="com.mc.Student">
+   <bean id="student1" class="com.mc.Student">
       <property name="name"  value="Zara" />
+       <!--try without passing age and check the result--> 
+       <property name="age"  value="11"/>
+   </bean>
+   
+   <bean id="student2" class="com.mc.Student">
+      <property name="name"  value="Tina" />
 
        <!--try without passing age and check the result--> 
-       <!--<property name="age"  value="11"/>-->
+       <property name="age"  value="18"/>
    </bean>
+   
    
 </beans>
