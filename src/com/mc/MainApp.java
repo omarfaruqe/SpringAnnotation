@@ -25,6 +25,13 @@ public class MainApp {
 
       System.out.println("Name : " + student.getName() );
       System.out.println("Age : " + student.getAge() );
+      
+        StudentController controller = context.getBean("studentController", StudentController.class);
+        student = controller.createNewStudent();
+        
+      System.out.println("Name : " + student.getName() );
+      System.out.println("Age : " + student.getAge() );
+
     }
     
 }

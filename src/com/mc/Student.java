@@ -6,11 +6,13 @@
 package com.mc;
 
 import org.springframework.beans.factory.annotation.Required;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author faruqe
  */
+@Component("student")
 public class Student {
 
     private Integer age;

@@ -15,7 +15,7 @@
       <property name="name"  value="Zara" />
 
        <!--try without passing age and check the result--> 
-       <!--<property name="age"  value="11"/>-->
+       <property name="age"  value="11"/>
    </bean>
-   
+   <context:component-scan base-package="com.mc" />
 </beans>
